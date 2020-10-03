@@ -164,6 +164,9 @@ public class StatisticV2 implements Serializable {
         if (mod.contains(GameMod.MOD_REALLYEASY)) {
             mult *= 0.4f;
         }
+        if (mod.contains(GameMod.MOD_PRECISE)) {
+            mult *= 1.05f;
+        }
         if (changeSpeed != 1.0f){
             mult *= getSpeedChangeScoreMultiplier();
         }
@@ -201,6 +204,9 @@ public class StatisticV2 implements Serializable {
         }
         if (mod.contains(GameMod.MOD_REALLYEASY)) {
             mult *= 0.4f;
+        }
+        if (mod.contains(GameMod.MOD_PRECISE)) {
+            mult *= 1.05f;
         }
         if (changeSpeed != 1.0f){
             mult *= getSpeedChangeScoreMultiplier();

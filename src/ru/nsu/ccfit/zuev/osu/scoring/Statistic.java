@@ -75,6 +75,9 @@ public class Statistic implements Serializable {
         if (mod.contains(GameMod.MOD_REALLYEASY)) {
             mult *= 0.4f;
         }
+        if (mod.contains(GameMod.MOD_PRECISE)) {
+            mult *= 1.05f;
+        }
         return (int) (totalScore * mult);
     }
 
@@ -109,6 +112,9 @@ public class Statistic implements Serializable {
         }
         if (mod.contains(GameMod.MOD_REALLYEASY)) {
             mult *= 0.4f;
+        }
+        if (mod.contains(GameMod.MOD_PRECISE)) {
+            mult *= 1.05f;
         }
         return (int) (totalScore * mult);
     }

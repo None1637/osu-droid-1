@@ -474,8 +474,7 @@ public class ScoringScene {
         if (track != null && mapMD5 != null) {
             if (stat.getModifiedTotalScore() > 0 && OnlineManager.getInstance().isStayOnline() &&
                     OnlineManager.getInstance().isReadyToSend()) {
-                if (stat.getMod().contains(GameMod.MOD_PRECISE)
-                || stat.getMod().contains(GameMod.MOD_SUDDENDEATH) 
+                if (stat.getMod().contains(GameMod.MOD_SUDDENDEATH) 
                 || stat.getMod().contains(GameMod.MOD_PERFECT)
                 || stat.getMod().contains(GameMod.MOD_SMALLCIRCLE)
                 || stat.getMod().contains(GameMod.MOD_REALLYEASY)
